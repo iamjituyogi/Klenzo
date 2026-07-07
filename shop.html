@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop All Products — Klenzo</title>
+  <meta name="description" content="Browse the full Klenzo range — toilet, floor, dish, hand wash and bath soap cleaners. Filter by price and shop plant-based, family-safe formulas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-drop" aria-hidden="true"></span>
+        Klenzo
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="index.html#products" class="nav-link">Products</a>
+        <a href="shop.html" class="nav-link active">Shop</a>
+        <a href="index.html#why" class="nav-link">Why Klenzo</a>
+        <a href="index.html#reviews" class="nav-link">Reviews</a>
+        <a href="shop.html" class="btn btn-primary btn-sm nav-cta">Shop Now</a>
+      </nav>
+
+      <div class="nav-icons">
+        <button class="nav-icon-btn" id="cartIconBtn" aria-label="View cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge">0</span>
+        </button>
+        <button class="nav-icon-btn" id="accountIconBtn" aria-label="My account">
+          <i class="fa-regular fa-user"></i>
+        </button>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-spacer">
+
+    <!-- ======= SHOP BANNER ======= -->
+    <section class="shop-banner">
+      <div class="container">
+        <div class="shop-banner-box">
+          <h1>Shop Page</h1>
+          <p>Here we are showing all our products — plant-based, dermatologically tested and made for every Indian home.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container breadcrumb">
+      <a href="index.html">Home</a><span>/</span>Shop
+    </div>
+
+    <!-- ======= SHOP LAYOUT ======= -->
+    <div class="container shop-layout">
+
+      <!-- Sidebar -->
+      <aside class="shop-sidebar">
+        <div class="filter-block">
+          <h4>Price Filter</h4>
+          <label class="filter-option">
+            <input type="checkbox" name="price" value="0-100" />
+            Under ₹100
+          </label>
+          <label class="filter-option">
+            <input type="checkbox" name="price" value="100-200" />
+            ₹100 – ₹200
+          </label>
+          <label class="filter-option">
+            <input type="checkbox" name="price" value="200-9999" />
+            Above ₹200
+          </label>
+        </div>
+
+        <div class="filter-block">
+          <h4>Recent Products</h4>
+          <div id="recentProducts"></div>
+        </div>
+
+        <div class="filter-block">
+          <h4>Best Selling</h4>
+          <div id="bestSellingProducts"></div>
+        </div>
+      </aside>
+
+      <!-- Product grid -->
+      <div class="shop-main">
+        <div class="shop-results-bar">
+          <p id="resultsCount"></p>
+          <button id="resetFilters">Reset filters</button>
+        </div>
+        <div class="shop-product-grid" id="shopProductGrid"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ======= QUICK VIEW MODAL ======= -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close quick view"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-media">
+        <img id="modalImg" src="" alt="" />
+      </div>
+      <div class="modal-info">
+        <h3 id="modalTitle"></h3>
+        <div class="price-row">
+          <span class="price-regular" id="modalRegular"></span>
+          <span class="price-sale" id="modalSale"></span>
+        </div>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-actions">
+          <button class="btn btn-primary btn-lg" id="modalAddCart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+          <a class="btn btn-ghost btn-lg" id="modalViewFull" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Full Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-light">
+          <span class="logo-drop" aria-hidden="true"></span>
+          Klenzo
+        </a>
+        <p>Plant-powered cleaning for every Indian home. Tough on grime, gentle on everything else.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="shop.html">Toilet Cleaner</a>
+        <a href="shop.html">Floor Cleaner</a>
+        <a href="shop.html">Dish Wash</a>
+        <a href="shop.html">Hand Wash</a>
+        <a href="shop.html">Bath Soap</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="index.html#why">Why Klenzo</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="career.html">Careers</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">Track Order</a>
+        <a href="#">Shipping &amp; Returns</a>
+        <a href="#">FAQs</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Klenzo Home Care Pvt. Ltd. All rights reserved.</p>
+      <p>Made with 💧 in India</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

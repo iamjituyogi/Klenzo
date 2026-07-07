@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Klenzo — Pure Clean, Every Day</title>
+  <meta name="description" content="Klenzo makes premium cleaning products for Indian homes — toilet, floor, mirror, dish and hand cleaners with plant-based power." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <header class="navbar scrolled" id="navbar" data-solid="true">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-drop" aria-hidden="true"></span>
+        Klenzo
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="#why" class="nav-link">Why Klenzo</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="shop.html" class="btn btn-primary btn-sm nav-cta">Shop Now</a>
+      </nav>
+
+      <div class="nav-icons">
+        <button class="nav-icon-btn" id="cartIconBtn" aria-label="View cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge">0</span>
+        </button>
+        <button class="nav-icon-btn" id="accountIconBtn" aria-label="My account">
+          <i class="fa-regular fa-user"></i>
+        </button>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======= HERO ======= -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="bubbles" id="bubbles"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow reveal">
+            <span class="eyebrow-dot"></span> Plant-based • Dermatologically tested
+          </span>
+          <h1 class="hero-title reveal delay-1">
+            Sparkling clean,<br />
+            <span class="grad-text">without the harsh.</span>
+          </h1>
+          <p class="hero-sub reveal delay-2">
+            Klenzo blends plant-powered formulas with lab-grade performance —
+            five essential cleaners that keep every corner of your home
+            spotless, fresh, and family-safe.
+          </p>
+          <div class="hero-actions reveal delay-3">
+            <a href="#products" class="btn btn-primary btn-lg">Explore Products</a>
+            <a href="#about" class="btn btn-ghost btn-lg">Our Story</a>
+          </div>
+          <div class="hero-trust reveal delay-4">
+            <div class="stars" aria-label="Rated 4.9 out of 5">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p><strong>4.9/5</strong> from 12,000+ happy homes across India</p>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-2" aria-hidden="true">
+          <div class="hero-card glass">
+            <img src="assets/img/floor-cleaner.png" alt="Klenzo Floor Cleaner 1L bottle" class="hero-product-img" />
+            <div class="float-chip chip-1 glass"><i class="fa-solid fa-leaf"></i> 100% Plant-based</div>
+            <div class="float-chip chip-2 glass"><i class="fa-solid fa-sparkles"></i> 99.9% Germ Kill</div>
+            <div class="float-chip chip-3 glass"><i class="fa-solid fa-paw"></i> Child &amp; Pet Safe</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#trust" class="scroll-hint" aria-label="Scroll down">
+        <span class="mouse"><span class="wheel"></span></span>
+      </a>
+    </section>
+
+    <!-- ======= TRUST BAR ======= -->
+    <section class="trust-bar" id="trust" aria-label="Certifications">
+      <div class="trust-track">
+        <div class="trust-group">
+          <span class="trust-item"><i class="fa-solid fa-circle-check"></i> ISO 9001 Certified</span>
+          <span class="trust-item"><i class="fa-solid fa-circle-check"></i> Cruelty-Free</span>
+          <span class="trust-item"><i class="fa-solid fa-circle-check"></i> Biodegradable Formula</span>
+          <span class="trust-item"><i class="fa-solid fa-circle-check"></i> Made in India</span>
+          <span class="trust-item"><i class="fa-solid fa-circle-check"></i> No Harsh Chemicals</span>
+          <span class="trust-item"><i class="fa-solid fa-circle-check"></i> Recyclable Packaging</span>
+        </div>
+        <div class="trust-group" aria-hidden="true">
+          <span class="trust-item"><i class="fa-solid fa-circle-check"></i> ISO 9001 Certified</span>
+          <span class="trust-item"><i class="fa-solid fa-circle-check"></i> Cruelty-Free</span>
+          <span class="trust-item"><i class="fa-solid fa-circle-check"></i> Biodegradable Formula</span>
+          <span class="trust-item"><i class="fa-solid fa-circle-check"></i> Made in India</span>
+          <span class="trust-item"><i class="fa-solid fa-circle-check"></i> No Harsh Chemicals</span>
+          <span class="trust-item"><i class="fa-solid fa-circle-check"></i> Recyclable Packaging</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CATEGORY ======= -->
+    <section class="section category" id="category">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal"><span class="eyebrow-dot"></span> Shop by Category</span>
+          <h2 class="section-title reveal delay-1">Find your essential, fast.</h2>
+          <p class="section-sub reveal delay-2">Jump straight to the cleaner your home needs right now.</p>
+        </div>
+        <div class="quick-shop reveal delay-3" aria-label="Shop by category">
+          <button class="quick-item" data-target="card-toilet">
+            <span class="quick-thumb"><img src="assets/img/toilet-cleaner.png" alt="" loading="lazy" /></span>
+            <span>Toilet</span>
+          </button>
+          <button class="quick-item" data-target="card-floor">
+            <span class="quick-thumb"><img src="assets/img/floor-cleaner.png" alt="" loading="lazy" /></span>
+            <span>Floor</span>
+          </button>
+          <button class="quick-item" data-target="card-dish">
+            <span class="quick-thumb"><img src="assets/img/dish-wash.png" alt="" loading="lazy" /></span>
+            <span>Dish</span>
+          </button>
+          <button class="quick-item" data-target="card-hand-lemon">
+            <span class="quick-thumb"><img src="assets/img/hand-wash.png" alt="" loading="lazy" /></span>
+            <span>Hand Wash</span>
+          </button>
+          <button class="quick-item" data-target="card-soap-lemon">
+            <span class="quick-thumb"><img src="assets/img/bath-soap-lemon-tight.png" alt="" loading="lazy" /></span>
+            <span>Bath Soap</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= ABOUT ======= -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="about-img-card glass">
+            <div class="about-swatch swatch-blue"></div>
+            <div class="about-swatch swatch-green"></div>
+            <div class="about-swatch swatch-aqua"></div>
+            <img src="assets/img/about.png" alt="The full Klenzo range — hand wash and bath soaps in lemon, lavender and ocean fresh" class="about-photo" loading="lazy" />
+            <div class="about-badge glass">
+              <span class="emblem-drop"></span>
+              <p>Since 2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-copy">
+          <span class="eyebrow reveal"><span class="eyebrow-dot"></span> Our Story</span>
+          <h2 class="section-title reveal delay-1">Clean homes shouldn't cost the earth — or your health.</h2>
+          <p class="reveal delay-2">
+            Klenzo started with a simple frustration: every powerful cleaner on the shelf
+            was loaded with harsh chemicals, and every gentle one didn't actually clean.
+            We spent three years in the lab proving you can have both.
+          </p>
+          <p class="reveal delay-3">
+            Today our plant-based formulas power over 12,000 homes across India —
+            tough on grime, gentle on hands, and kind to the planet.
+          </p>
+          <ul class="about-points reveal delay-4">
+            <li><span class="point-icon"><i class="fa-solid fa-flask"></i></span> Lab-tested, salon-grade performance</li>
+            <li><span class="point-icon"><i class="fa-solid fa-seedling"></i></span> Derived from coconut &amp; citrus extracts</li>
+            <li><span class="point-icon"><i class="fa-solid fa-recycle"></i></span> Bottles made from 70% recycled plastic</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= STATS ======= -->
+    <section class="section stats-section">
+      <div class="container">
+        <div class="stats-card glass reveal">
+          <div class="stat">
+            <span class="stat-number" data-count="12000">0</span><span class="stat-plus">+</span>
+            <p>Happy Homes</p>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-count="99">0</span><span class="stat-plus">.9%</span>
+            <p>Germ Protection</p>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-count="5">0</span><span class="stat-plus"></span>
+            <p>Essential Cleaners</p>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-count="70">0</span><span class="stat-plus">%</span>
+            <p>Recycled Packaging</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= PRODUCTS ======= -->
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal"><span class="eyebrow-dot"></span> Our Products</span>
+          <h2 class="section-title reveal delay-1">Eight essentials.<br />Every corner covered.</h2>
+          <p class="section-sub reveal delay-2">From floors to hands to bath — one formula philosophy across the whole range: tough on dirt, safe for family.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal" id="card-toilet" data-id="toilet-cleaner">
+            <div class="product-media">
+              <a href="product.html?id=toilet-cleaner">
+                <img src="assets/img/toilet-cleaner.png" alt="Klenzo Toilet Cleaner" loading="lazy" />
+              </a>
+              <button class="wish-btn" aria-label="Add Toilet Cleaner to wishlist" aria-pressed="false"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+              <h3><a href="product.html?id=toilet-cleaner">Toilet Cleaner</a></h3>
+              <span class="price">₹149 <small>/ 500ml</small></span>
+              <div class="product-actions">
+                <button class="btn-cart" aria-label="Add Toilet Cleaner to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="btn-info">View Info</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal delay-1" id="card-floor" data-id="floor-cleaner">
+            <div class="product-media">
+              <a href="product.html?id=floor-cleaner">
+                <img src="assets/img/floor-cleaner.png" alt="Klenzo Floor Cleaner" loading="lazy" />
+              </a>
+              <button class="wish-btn" aria-label="Add Floor Cleaner to wishlist" aria-pressed="false"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+              <h3><a href="product.html?id=floor-cleaner">Floor Cleaner</a></h3>
+              <span class="price">₹199 <small>/ 1L</small></span>
+              <div class="product-actions">
+                <button class="btn-cart" aria-label="Add Floor Cleaner to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="btn-info">View Info</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal delay-2" id="card-dish" data-id="dish-wash">
+            <div class="product-media">
+              <a href="product.html?id=dish-wash">
+                <img src="assets/img/dish-wash.png" alt="Klenzo Dish Wash" loading="lazy" />
+              </a>
+              <button class="wish-btn" aria-label="Add Dish Wash to wishlist" aria-pressed="false"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+              <h3><a href="product.html?id=dish-wash">Dish Wash</a></h3>
+              <span class="price">₹99 <small>/ 500ml</small></span>
+              <div class="product-actions">
+                <button class="btn-cart" aria-label="Add Dish Wash to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="btn-info">View Info</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal delay-3" id="card-hand-lemon" data-id="hand-wash-lemon">
+            <div class="product-media">
+              <a href="product.html?id=hand-wash-lemon">
+                <img src="assets/img/hand-wash.png" alt="Klenzo Hand Wash — Lemon" loading="lazy" />
+              </a>
+              <button class="wish-btn" aria-label="Add Hand Wash — Lemon to wishlist" aria-pressed="false"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+              <h3><a href="product.html?id=hand-wash-lemon">Hand Wash — Lemon</a></h3>
+              <span class="price">₹119 <small>/ 500ml</small></span>
+              <div class="product-actions">
+                <button class="btn-cart" aria-label="Add Hand Wash — Lemon to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="btn-info">View Info</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal delay-4" id="card-hand-lavender" data-id="hand-wash-lavender">
+            <div class="product-media">
+              <a href="product.html?id=hand-wash-lavender">
+                <img src="assets/img/hand-wash2.png" alt="Klenzo Hand Wash — Lavender" loading="lazy" />
+              </a>
+              <button class="wish-btn" aria-label="Add Hand Wash — Lavender to wishlist" aria-pressed="false"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+              <h3><a href="product.html?id=hand-wash-lavender">Hand Wash — Lavender</a></h3>
+              <span class="price">₹119 <small>/ 500ml</small></span>
+              <div class="product-actions">
+                <button class="btn-cart" aria-label="Add Hand Wash — Lavender to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="btn-info">View Info</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" id="card-soap-lemon" data-id="bath-soap-lemon">
+            <div class="product-media">
+              <a href="product.html?id=bath-soap-lemon">
+                <img src="assets/img/bath-soap-lemon-tight.png" alt="Klenzo Bath Soap — Lemon" loading="lazy" />
+              </a>
+              <button class="wish-btn" aria-label="Add Bath Soap — Lemon to wishlist" aria-pressed="false"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+              <h3><a href="product.html?id=bath-soap-lemon">Bath Soap — Lemon</a></h3>
+              <span class="price">₹45 <small>/ 100g</small></span>
+              <div class="product-actions">
+                <button class="btn-cart" aria-label="Add Bath Soap — Lemon to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="btn-info">View Info</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal delay-1" id="card-soap-lavender" data-id="bath-soap-lavender">
+            <div class="product-media">
+              <a href="product.html?id=bath-soap-lavender">
+                <img src="assets/img/bath-soap-lavender-tight.png" alt="Klenzo Bath Soap — Lavender" loading="lazy" />
+              </a>
+              <button class="wish-btn" aria-label="Add Bath Soap — Lavender to wishlist" aria-pressed="false"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+              <h3><a href="product.html?id=bath-soap-lavender">Bath Soap — Lavender</a></h3>
+              <span class="price">₹45 <small>/ 100g</small></span>
+              <div class="product-actions">
+                <button class="btn-cart" aria-label="Add Bath Soap — Lavender to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="btn-info">View Info</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal delay-2" id="card-soap-ocean" data-id="bath-soap-ocean">
+            <div class="product-media">
+              <a href="product.html?id=bath-soap-ocean">
+                <img src="assets/img/bath-soap-ocean-tight.png" alt="Klenzo Bath Soap — Ocean Fresh" loading="lazy" />
+              </a>
+              <button class="wish-btn" aria-label="Add Bath Soap — Ocean Fresh to wishlist" aria-pressed="false"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+              <h3><a href="product.html?id=bath-soap-ocean">Bath Soap — Ocean Fresh</a></h3>
+              <span class="price">₹45 <small>/ 100g</small></span>
+              <div class="product-actions">
+                <button class="btn-cart" aria-label="Add Bath Soap — Ocean Fresh to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="btn-info">View Info</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="products-footer reveal">
+          <a class="btn btn-ghost btn-lg" href="shop.html"><i class="fa-solid fa-grid-2"></i> View All Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= BEST SELLER OFFER ======= -->
+    <section class="section cta-section" id="contact">
+      <div class="container">
+        <div class="offer-banner reveal">
+          <div class="offer-visual">
+            <img src="assets/img/about.png" alt="Klenzo 5-Pack Bundle — dish wash, hand wash and bath soaps" loading="lazy" />
+            <span class="offer-ribbon"><i class="fa-solid fa-fire"></i> Most Popular</span>
+          </div>
+          <div class="offer-copy">
+            <span class="eyebrow reveal"><span class="eyebrow-dot"></span> Best Selling Package</span>
+            <h2 class="section-title reveal delay-1">The Klenzo 5-Pack Bundle</h2>
+            <p class="reveal delay-2">
+              Our most-loved combo — dish wash, both hand wash scents, and the full bath soap
+              trio in one box. Everything your home needs for the month, bundled at 20% off.
+            </p>
+            <div class="offer-rating reveal delay-2">
+              <span class="stars" aria-hidden="true">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </span>
+              <span>4.9 · 2,300+ orders this month</span>
+            </div>
+            <div class="offer-price reveal delay-3">
+              <span class="price-now">₹636</span>
+              <span class="price-was">₹795</span>
+              <span class="price-off">20% OFF</span>
+            </div>
+            <div class="offer-actions reveal delay-4">
+              <button class="btn btn-primary btn-lg" id="buyNowBtn"><i class="fa-solid fa-bolt"></i> Buy Now</button>
+              <button class="btn btn-ghost btn-lg" id="bundleCartBtn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <span class="cta-note"><i class="fa-solid fa-shield-halved"></i> 30-day money-back guarantee · Ships in 24 hours</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= WHY KLENZO ======= -->
+    <section class="section why" id="why">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal"><span class="eyebrow-dot"></span> Why Klenzo</span>
+          <h2 class="section-title reveal delay-1">Built different, on purpose.</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card glass reveal">
+            <div class="why-icon"><i class="fa-solid fa-leaf"></i></div>
+            <h3>Plant-Powered Formula</h3>
+            <p>Coconut and citrus-derived actives that clean as hard as chemicals — without being one.</p>
+          </div>
+          <div class="why-card glass reveal delay-1">
+            <div class="why-icon"><i class="fa-solid fa-shield-virus"></i></div>
+            <h3>99.9% Germ Protection</h3>
+            <p>Independently lab-tested against common household bacteria and viruses.</p>
+          </div>
+          <div class="why-card glass reveal delay-2">
+            <div class="why-icon"><i class="fa-solid fa-paw"></i></div>
+            <h3>Family &amp; Pet Safe</h3>
+            <p>No bleach, no ammonia, no phosphates. Safe around little hands and curious paws.</p>
+          </div>
+          <div class="why-card glass reveal delay-3">
+            <div class="why-icon"><i class="fa-solid fa-recycle"></i></div>
+            <h3>Planet-First Packaging</h3>
+            <p>70% recycled bottles, refill packs coming soon, and fully biodegradable formulas.</p>
+          </div>
+          <div class="why-card glass reveal delay-1">
+            <div class="why-icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <h3>Free Delivery</h3>
+            <p>Free doorstep delivery on all orders above ₹399, anywhere in India.</p>
+          </div>
+          <div class="why-card glass reveal delay-2">
+            <div class="why-icon"><i class="fa-solid fa-medal"></i></div>
+            <h3>30-Day Guarantee</h3>
+            <p>Not impressed by the shine? Full refund, no questions asked, within 30 days.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= APP PROMO ======= -->
+    <section class="section app-promo" id="app">
+      <div class="app-bg" aria-hidden="true">
+        <div class="app-blob app-blob-1"></div>
+        <div class="app-blob app-blob-2"></div>
+      </div>
+      <div class="container app-inner">
+        <div class="app-copy">
+          <span class="eyebrow eyebrow-light reveal"><span class="eyebrow-dot"></span> Coming Soon</span>
+          <h2 class="section-title title-light reveal delay-1">The Klenzo app is<br />almost here.</h2>
+          <p class="section-sub sub-light reveal delay-2">
+            Reorder your essentials in one tap, track deliveries live, and unlock
+            app-only offers. Launching soon on iOS and Android.
+          </p>
+          <div class="store-badges reveal delay-3">
+            <a href="#" class="store-badge" aria-label="Coming soon on the App Store">
+              <i class="fa-brands fa-apple"></i>
+              <span><small>Coming soon on the</small>App Store</span>
+            </a>
+            <a href="#" class="store-badge" aria-label="Coming soon on Google Play">
+              <i class="fa-brands fa-google-play"></i>
+              <span><small>Coming soon on</small>Google Play</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="app-visual reveal delay-2" aria-hidden="true">
+          <div class="app-phone glass">
+            <div class="app-phone-notch"></div>
+            <div class="app-phone-screen">
+              <span class="app-phone-logo"><span class="logo-drop"></span></span>
+              <p>Klenzo</p>
+              <span class="app-phone-tag">App launching soon</span>
+            </div>
+          </div>
+          <div class="app-float-icon icon-1 glass"><i class="fa-solid fa-bell"></i></div>
+          <div class="app-float-icon icon-2 glass"><i class="fa-solid fa-truck-fast"></i></div>
+          <div class="app-float-icon icon-3 glass"><i class="fa-solid fa-tags"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= REVIEWS ======= -->
+    <section class="section reviews" id="reviews">
+      <div class="container section-head">
+        <span class="eyebrow reveal"><span class="eyebrow-dot"></span> Reviews</span>
+        <h2 class="section-title reveal delay-1">Loved by 12,000+ homes.</h2>
+        <p class="section-sub reveal delay-2">Real words from real Klenzo households.</p>
+      </div>
+
+      <div class="marquee marquee-left" aria-label="Customer reviews, row one">
+        <div class="marquee-track" id="marqueeTop"></div>
+      </div>
+      <div class="marquee marquee-right" aria-label="Customer reviews, row two">
+        <div class="marquee-track" id="marqueeBottom"></div>
+      </div>
+    </section>
+
+    <!-- ======= INSTAGRAM ======= -->
+    <section class="section instagram" id="instagram">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal"><span class="eyebrow-dot"></span> Follow Along</span>
+          <h2 class="section-title reveal delay-1">@klenzo_official</h2>
+          <p class="section-sub reveal delay-2">Real homes, real routines — tag us for a chance to be featured.</p>
+        </div>
+      </div>
+
+      <div class="insta-grid reveal delay-3">
+        <a href="#" class="insta-item">
+          <img src="assets/img/toilet-cleaner.png" alt="Klenzo Toilet Cleaner on Instagram" loading="lazy" />
+          <span class="insta-overlay"><i class="fa-brands fa-instagram"></i><span>View Post</span></span>
+        </a>
+        <a href="#" class="insta-item">
+          <img src="assets/img/floor-cleaner.png" alt="Klenzo Floor Cleaner on Instagram" loading="lazy" />
+          <span class="insta-overlay"><i class="fa-brands fa-instagram"></i><span>View Post</span></span>
+        </a>
+        <a href="#" class="insta-item">
+          <img src="assets/img/dish-wash.png" alt="Klenzo Dish Wash on Instagram" loading="lazy" />
+          <span class="insta-overlay"><i class="fa-brands fa-instagram"></i><span>View Post</span></span>
+        </a>
+        <a href="#" class="insta-item">
+          <img src="assets/img/hand-wash.png" alt="Klenzo Hand Wash Lemon on Instagram" loading="lazy" />
+          <span class="insta-overlay"><i class="fa-brands fa-instagram"></i><span>View Post</span></span>
+        </a>
+        <a href="#" class="insta-item">
+          <img src="assets/img/hand-wash2.png" alt="Klenzo Hand Wash Lavender on Instagram" loading="lazy" />
+          <span class="insta-overlay"><i class="fa-brands fa-instagram"></i><span>View Post</span></span>
+        </a>
+        <a href="#" class="insta-item">
+          <img src="assets/img/bath-soap-lemon-tight.png" alt="Klenzo Bath Soap Lemon on Instagram" loading="lazy" />
+          <span class="insta-overlay"><i class="fa-brands fa-instagram"></i><span>View Post</span></span>
+        </a>
+        <a href="#" class="insta-item">
+          <img src="assets/img/bath-soap-ocean-tight.png" alt="Klenzo Bath Soap Ocean Fresh on Instagram" loading="lazy" />
+          <span class="insta-overlay"><i class="fa-brands fa-instagram"></i><span>View Post</span></span>
+        </a>
+      </div>
+
+      <div class="container">
+        <div class="products-footer reveal">
+          <a href="#" class="btn btn-primary btn-lg"><i class="fa-brands fa-instagram"></i> Follow @klenzo_official</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-light">
+          <span class="logo-drop" aria-hidden="true"></span>
+          Klenzo
+        </a>
+        <p>Plant-powered cleaning for every Indian home. Tough on grime, gentle on everything else.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="#products">Toilet Cleaner</a>
+        <a href="#products">Floor Cleaner</a>
+        <a href="#products">Mirror Cleaner</a>
+        <a href="#products">Dish Cleaner</a>
+        <a href="#products">Hand Cleaner</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="#why">Why Klenzo</a>
+        <a href="#reviews">Reviews</a>
+        <a href="career.html">Careers</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">Track Order</a>
+        <a href="#">Shipping &amp; Returns</a>
+        <a href="#">FAQs</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Klenzo Home Care Pvt. Ltd. All rights reserved.</p>
+      <p>Made with 💧 in India</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

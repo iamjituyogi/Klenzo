@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart — Klenzo</title>
+  <meta name="description" content="Review the items in your Klenzo cart, update quantities, and check out." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-drop" aria-hidden="true"></span>
+        Klenzo
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="index.html#products" class="nav-link">Products</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="index.html#why" class="nav-link">Why Klenzo</a>
+        <a href="index.html#reviews" class="nav-link">Reviews</a>
+        <a href="shop.html" class="btn btn-primary btn-sm nav-cta">Shop Now</a>
+      </nav>
+
+      <div class="nav-icons">
+        <button class="nav-icon-btn" id="cartIconBtn" aria-label="View cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge">0</span>
+        </button>
+        <button class="nav-icon-btn" id="accountIconBtn" aria-label="My account">
+          <i class="fa-regular fa-user"></i>
+        </button>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-spacer">
+
+    <!-- ======= CART BANNER ======= -->
+    <section class="cart-banner">
+      <div class="container cart-banner-box">
+        <h1><i class="fa-solid fa-cart-shopping"></i> Your Cart</h1>
+        <p id="cartSubtitle">Review your items before checkout.</p>
+      </div>
+    </section>
+
+    <div class="container breadcrumb">
+      <a href="index.html">Home</a><span>/</span>Cart
+    </div>
+
+    <section class="cart-page">
+      <div class="container" id="cartContainer">
+        <!-- Populated by assets/js/main.js: either .cart-layout or .cart-empty -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-light">
+          <span class="logo-drop" aria-hidden="true"></span>
+          Klenzo
+        </a>
+        <p>Plant-powered cleaning for every Indian home. Tough on grime, gentle on everything else.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="shop.html">Toilet Cleaner</a>
+        <a href="shop.html">Floor Cleaner</a>
+        <a href="shop.html">Dish Wash</a>
+        <a href="shop.html">Hand Wash</a>
+        <a href="shop.html">Bath Soap</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="index.html#why">Why Klenzo</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="career.html">Careers</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">Track Order</a>
+        <a href="#">Shipping &amp; Returns</a>
+        <a href="#">FAQs</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Klenzo Home Care Pvt. Ltd. All rights reserved.</p>
+      <p>Made with 💧 in India</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
